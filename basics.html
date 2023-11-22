@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- <?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // In a real application, you would perform proper validation and verification here.
+    // For simplicity, this example just checks for non-empty values.
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    if (!empty($username) && !empty($password)) {
+        // Perform authentication (e.g., check against a database)
+        // For this example, let's assume the username is "admin" and password is "password"
+        if ($username === "admin" && $password === "password") {
+            echo "<p>Login successful! Welcome, $username!</p>";
+        } else {
+            echo "<p>Invalid username or password. Please try again.</p>";
+        }
+    } else {
+        echo "<p>Both username and password are required.</p>";
+    }
+}
+?> -->
+
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button><a href="https://symptomate.com/interview/0">Login</a></button>
+</form>
+
+</body>
+</html>
